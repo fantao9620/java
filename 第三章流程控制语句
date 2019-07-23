@@ -1,0 +1,13 @@
+条件语句
+if
+if…else…
+switch
+常见功能
+控制台输入 Scanner input=new Scanner(System.in);
+产生随机数 new Random().nextint(num);产生0-(num-1)之间的整数
+循环控制语句
+for
+while
+do…while
+break结束本层循环、continue结束本层的本次循环,继续本层下一次循环
+断点调试
