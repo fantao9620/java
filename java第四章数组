@@ -1,0 +1,12 @@
+一维数组
+掌握数组的长度
+掌握一维数组的声明、创建、初始化
+int[] num = new int[5];
+int[] num = {2,3,45,5};
+int[] num = new int[]{2,3,45,5};
+数组的常见错误ArraysIndexOutOfBoundsException
+多维数组
+掌握二维数组的声明、创建、初始化
+int[][] nums={{1,2,3},{4,5,6}}
+理解数组的复制,排序可以参考javaApi帮助文档
+理解数组的排序冒泡,arrays.sort()
