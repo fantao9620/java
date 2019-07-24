@@ -1,0 +1,49 @@
+方法定义
+方法调用
+有参方法的调用
+有参无返回值方法调用
+public class FunctionDemo {
+2. public static void show(int x,int y ) {
+3. System.out.println(x+y);
+4. }
+5. public static void main(String[] args) {
+6. show(2,3);
+7. }
+8. }
+调用有参方法:给方法的入口传入一些值（实参），给方法传入参数
+的过程，称为“传参”。方法传参的过程就是把实参赋值给对应的形
+参的过程，因此要求实参和形参的数量、类型、顺序必须匹配。
+调用方法时，实参直接在括号中，不需要类型声明。实参可以是常量，
+也可以是有值的变量。
+有参有返回值方法调用
+public class FunctionDemo {
+2. public static int show(int x,int y ) {
+3. return x+y;
+4. }
+5. public static void main(String[] args) {
+6. int a = show(2,3);
+7. show(2,3);
+8. }
+9. }
+如果方法有返回值，调用方法可以得到该方法的返回值，然后赋值给
+与方法返回值类型相同的变量。
+无参方法的调用
+无参无返回值方法调用
+public class FunctionDemo {
+2. public static void show( ) {
+3. System.out.println(“hello”);
+4. }
+5. public static void main(String[] args) {
+6. show();
+7. show();
+8. }
+9. }
+定义方法：定义的方法可以被多次调用。
+调用方法：定义方法中的代码，只有在调用后才生效。
+方法的重载
+方法重载的规则
+方法名称相同
+方法的参数必须不同
+参数个数不同 或
+参数类型不同
+方法的返回值类型可以相同，也可以不同
