@@ -1,0 +1,22 @@
+异常类的继承关系
+throwable--->error
+             exception     RuntimeException  非检查性异常(避免):ArithmeticException 
+                                                               NullpointException
+                                                               ArrayIndexOutofboundsException
+                           IOException        检查性异常(大多数异常无法避免):FileNotFoundException
+检查性异常:大多数异常无法避免,需要处理异常
+
+非检查性异常:需要程序员思维缜密,尽量避免
+
+异常处理机制:try-catch,throws由方法抛出
+
+try、catch、finally语句
+如果try里面发生异常,执行catch里面的语句,
+如果try里面没有发生异常,不执行catch里面的语句,
+无论是否发生异常finally始终会执行
+
+当finally遇到try里面有return语句,执行到return的时候,先去执行finally,然后再结束方法
+finally块在遇到System.exit(0)语句时不执行
+throw、throws关键字
+throw是指定抛出异常,然后进行异常处理,结合try-catch或throws处理
+定义一个类继承Exception,把这个类当做类似于自定义异常类系统已经定义的异常类去使用
