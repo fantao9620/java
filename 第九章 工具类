@@ -1,0 +1,37 @@
+java常用包
+java.lang 自动导入,不需要写import语句:包装类,String,object,math
+java.util 工具包,集合接口和类,日期,随机数
+java.io file
+java.net
+java.sql
+Object类
+hashcode()、equals()、toString()方法(进入Object源码里面看)
+==和equals的区别
+==只能比较引用类型和基本数据类型;比较引用类型数据就是比较地址
+equals只能比较引用数据类型,Object类里面equals方法是比较的地址
+String里面重写equals方法后,是比较的数值
+包装类
+包装类、基本数据类型、字符串间的相互转换
+包装类-基本数据类型:xxxvalue()方法:自动拆箱
+基本数据方法-包装类:构造器;自动装箱
+包装类-字符串:toString()
+字符串-包装类:构造器或者valueof()
+基本数据类型-字符串:""+基本数据类型;转化为包装类再toString()
+字符串-基本数据类型:parsexxx()
+字符串类
+String、StringBuffer、StringBuilder的常用方法
+String与StringBuffer的异同
+String里面的对象里面的值不可变,
+StringBuffer里面对象是可变的,适用于字符串频繁修改
+StringBuffer与StringBuilder的异同,对于字符串的操作时相同的
+StringBuffer线程安全,多线程环境
+StringBuisder线程不安全,单线程环境,效率高
+Math类
+Math类的常用方法,random()随机数,round()四舍五入,ceil向下取整,flow向上取整
+日期类型
+Date类的使用:取系统时间new Date().作为格式化处理,getTime()取毫秒数
+Calendar类的使用:取年月日时分秒
+SimpleDateFormat类:
+SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd:mm:sss")
+sdf.parse()将格式化的字符串转化为日期类型
+sdf.format()把日期转化为字符串
