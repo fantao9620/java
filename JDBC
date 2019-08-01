@@ -10,3 +10,9 @@ jdbc访问数据库的步骤
 jdbc核心接口与类
 类:drivermanager,sqlexception
 接口:connection,PreparedStatement,Statement,Resultset,CallableStatement
+
+执行sql语句
+新增,删除,修改      int result = pstmt.excuteUpdate();判断是否result>0
+查询   ResultSet  rs=pstmt.executeQuery();用while循环读取结果集
+参数    ?表示要传递到数据库中的值
+这个值通过pstmt.setxxx(index,值),index是第几个?
