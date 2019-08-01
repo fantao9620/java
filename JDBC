@@ -1,0 +1,12 @@
+什么是jdbc:java database connectivity
+jdbc访问数据库的步骤
+    0.准备访问数据库的连接参数
+    1.加载数据库驱动(针对于不同数据库)
+    2.创建连接对象
+    3.发送sql语句
+    4.执行sql语句,返回结果
+    5.处理返回的结果
+    6.释放资源
+jdbc核心接口与类
+类:drivermanager,sqlexception
+接口:connection,PreparedStatement,Statement,Resultset,CallableStatement
